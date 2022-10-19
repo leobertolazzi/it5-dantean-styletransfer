@@ -6,7 +6,7 @@ The project is to perform Text Style Transfer from standard italian to Dantean i
 
 ## Dataset
 
-The dataset used for this project is called ita2dante dataset. It contains all the sentences from Dante's "Divine Comedy" along with paraphrases in contemporary italian (approximately 6k pairs in total). The data is scraped from [divinacommedia.weebly.com](https://divinacommedia.weebly.com/). Both the dataset and the notebook used to create it can be found in the folder `dataset`.
+The dataset used for this project is called ita2dante dataset. It contains all the sentences from Dante's "Divine Comedy" along with paraphrases in contemporary italian (approximately 6k pairs in total). The data is scraped from [divinacommedia.weebly.com](https://divinacommedia.weebly.com/). The dataset can be found in the folder `dataset`. The folder `dataset` also contains three other files: `scraper.py` `create_dataset.py` `ita2dante_analysis.ipynb`. `scraper.py` is the python script used to scrape sentences from Dante and paraphrases. The scraped text is not perfectly aligned, and for this reason part of the alignment was done manually. `create_dataset.py` is the script used to create the dataset with aligned scraped text (n.b. it yelds the correct result only with aligned text). `ita2dante_analysis.ipynb` contains an analysis of some linguistic features of the dataset.
 
 Here are the first three rows of the ita2dante dataset:
 
